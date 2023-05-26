@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TodoMovieApp_Angular';
-  name = 'Umut'
+  name = 'Umut';
+  items= [
+    {description:"Sci-Fi",action:"No"},
+    {description:"Romance",action:"No"},
+    {description:"Action",action:"No"}  
+  ];
 }
