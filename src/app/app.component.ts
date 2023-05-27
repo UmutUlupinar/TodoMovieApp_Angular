@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Model } from './model';
+
 
 @Component({
   selector: 'app-root',
@@ -6,11 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TodoMovieApp_Angular';
-  name = 'Umut';
-  items= [
-    {description:"Sci-Fi",action:"No"},
-    {description:"Romance",action:"No"},
-    {description:"Action",action:"No"}  
-  ];
+   
+  model = new Model
+  getUser(){
+    return this.model.user;
+  };
+  getItems(){
+    return this.model.items;
+  };
 }
