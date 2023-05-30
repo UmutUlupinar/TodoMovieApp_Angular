@@ -22,11 +22,7 @@
             <tr *ngFor="let item of getItems(); let i = index">
                 <td>{{i+1}}</td>
                 <td>{{item.description}}</td>
-                <!-- <td <div *ngIf=""="item.action.ToString()">
-                    <div *ngSwitchWhen="true">Yes</div>
-                    <div *ngSwitchWhen="false">No</div>
-                    <div *ngSwitchDefault></div> -->
-                </div>></td>
+                <td *ngIf="item.action">Yes</td>
             </tr>
         </tbody>
     </table>
